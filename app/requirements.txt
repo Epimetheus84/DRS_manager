@@ -3,7 +3,7 @@ chardet==3.0.4
 Click==7.0
 docker==4.0.2
 docker-registry-client==0.5.2
-ecdsa==0.13.2
+ecdsa==0.13.3
 Flask==1.1.1
 Flask-Cors==3.0.8
 gunicorn==19.9.0
