@@ -7,6 +7,7 @@ docker run --privileged -v $(pwd)/configs/config.yml:/srv/flask_app/config.yml -
 ### config.yml - Файл настроек синхронизации
 Используя gui их можно менять ( %server_address%/settings )
 Пример пустого файла:
+```
 dst_registry:
   ADDRESS: null // адрес dst реестра (destination)
   PASSWORD: null  // password авторизации в докер реестр (если запрашивается)
@@ -19,6 +20,7 @@ src_registry:
   ADDRESS: localhost:5000 // адрес src реестра (source)
   PASSWORD: null // password авторизации в докер реестр (если запрашивается)
   USERNAME: null // login авторизации в докер реестр (если запрашивается)
+```
 
 ### Автоматическая синхронизация 
 происходит по url - %server_address%/api/synchronize
