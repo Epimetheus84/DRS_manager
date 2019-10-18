@@ -1,0 +1,138 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  float: left;
+  width: 100%;
+}
+.App {
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+}
+.App .images-list {
+  width: 350px;
+  display: block;
+  float: left;
+  margin: 20px;
+}
+.App .images-list .form-control {
+  width: 100%;
+}
+.App .images-list .form-control select {
+  background: #f2f2f2;
+  height: 650px;
+  padding: 5px;
+}
+.App .actions-list {
+  display: block;
+  float: left;
+  margin: 300px 0px 20px;
+  width: 220px;
+}
+.App .button-wrapper {
+  margin: 20px 0px;
+}
+.App .button-wrapper button {
+  width: 100%;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000020;
+    z-index: 1;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #0047c8 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.settings-btn {
+    position: absolute;
+    z-index: 0;
+    right: 15px;
+    top: 15px;
+}
+.settings-btn svg {
+    width: 40px;
+    height: 40px;
+    color: gray;
+}
+.settings-form {
+    width: 800px;
+    margin: 0 auto;
+}
+.settings-form h2 {
+    text-align: center;
+}
+.return-btn {
+    float: right;
+}
+.images-list .select-repo {
+    background: #f2f2f2;
+}
+.logs {
+    height: 150px;
+    width: calc(100% - 40px);
+    background: #f2f2f2;
+    bottom: 0;
+    position: relative;
+    border-top: 1px solid gray;
+    border-bottom: 0px;
+    margin: 0 20px;
+    float: left;
+    text-align: left;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.logs .time{
+    font-weight: bold;
+    width: 70px;
+    display: inline-block;
+}
+.logs .error {
+    color: #f50057;
+}
+option:hover {
+    cursor: pointer;
+    background: #51a9f0;
+    color: white;
+}
